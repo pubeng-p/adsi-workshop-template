@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
-    "dev:sagemaker": "next dev -p 3000",
+    "dev:sagemaker": "bash scripts/dev-sagemaker.sh",
+    "dev:sagemaker:stop": "bash scripts/dev-sagemaker.sh stop",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
