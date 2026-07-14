@@ -3,79 +3,83 @@
 ## 1. ユーザーと権限
 
 [Question] 利用者の種類は？（例: 一般社員、管理者、人事部門など）
-[Answer] 
+[Answer] 一般社員と管理者の2種類とする
 
 [Question] 管理者は何ができる？（例: 全社員の勤怠閲覧、修正承認、マスタ管理など）
-[Answer]
+[Answer] 全社員の勤怠履歴（打刻履歴）を閲覧できる
 
 [Question] 認証方式は？（例: ID/パスワード、SSO、社員番号+パスワードなど）
-[Answer]
+[Answer] ID/パスワード
 
 ## 2. 打刻機能
 
 [Question] 打刻の種類は？（例: 出勤・退勤のみ？ 休憩開始・終了も含む？）
-[Answer]
+[Answer] 出勤・退勤のみ
 
 [Question] 打刻方法は？（例: Web画面のボタン押下のみ？ ICカード連携？ GPS？）
-[Answer]
+[Answer] Web画面のボタン押下のみ
 
 [Question] 打刻忘れ・打刻修正の申請フローは必要？
-[Answer]
+[Answer] 不要
 
 [Question] 同日に複数回出勤（分割勤務）はある？
-[Answer]
+[Answer] なし
 
 ## 3. 勤務ルール
 
 [Question] 所定労働時間は？（例: 9:00〜18:00、フレックス、シフト制など）
-[Answer]
+[Answer] 9:00～18:00
 
 [Question] 残業の計算ルールは？（例: 所定超過分を自動計算？ 申請ベース？）
-[Answer]
+[Answer] 不要（MVP対象外）
 
 [Question] 深夜勤務（22:00〜5:00）の割増計算は必要？
-[Answer]
+[Answer] 不要（MVP対象外）
 
 [Question] 休日出勤の扱いは？（振替休日・代休の管理は必要？）
-[Answer]
+[Answer] 不要（MVP対象外）
 
 ## 4. 休暇管理
 
 [Question] 管理する休暇の種類は？（例: 有給、半休、特別休暇、代休など）
-[Answer]
+[Answer] 有給休暇、半休、病気休暇の3種類
 
 [Question] 有給の自動付与（入社日ベース or 一斉付与）は必要？
-[Answer]
+[Answer] 自動付与は行わない。管理者の承認によって付与・管理する
 
 [Question] 休暇申請 → 承認のワークフローは必要？
-[Answer]
+[Answer] 必要（管理者が承認する）
 
 ## 5. 集計・レポート
 
 [Question] 月次の勤怠集計表は必要？（項目例: 出勤日数、残業時間、有給残日数）
-[Answer]
+[Answer] 必要。グラフ形式での表示を希望
 
 [Question] CSV / Excel エクスポートは必要？
-[Answer]
+[Answer] 必要
 
 [Question] 給与システム等への連携は必要？
-[Answer]
+[Answer] 不要
 
 ## 6. 技術・スコープ
 
 [Question] 社員数の規模感は？（例: 〜50人、〜500人、1000人以上）
-[Answer]
+[Answer] 約50人
 
 [Question] スマートフォン対応は必要？（レスポンシブ or ネイティブアプリ）
-[Answer]
+[Answer] 不要
 
 [Question] MVP（最初に作る最小スコープ）として優先する機能は？
-[Answer]
+[Answer] 以下を必須スコープとする：
+1. ログイン認証（ID/パスワード）
+2. 出勤・退勤の打刻
+3. 自分の勤怠履歴の閲覧
+4. 管理者による全社員の勤怠閲覧
 
 ## 7. その他
 
 [Question] 36協定の警告（月45時間超え等）通知は必要？
-[Answer]
+[Answer] 不要
 
 [Question] 他に必須の要件や制約があれば教えてください。
-[Answer]
+[Answer] 特になし
