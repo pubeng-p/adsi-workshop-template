@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // SageMaker プレビュー用の素の Node HTTP プロキシ（アプリ外スクリプト）。
+    // CommonJS require() で起動するため Next/TS の lint 対象外にする。
+    "server.js",
   ]),
 ]);
 
